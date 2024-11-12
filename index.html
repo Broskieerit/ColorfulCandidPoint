@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9290651609558824">
+    <meta name="google-site-verification" content="mA1MeCERIcnS5bw1Z--_r5-ifviblEXUy3Et525q_dc" />
+    <title>allinone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Marvin Quillo Saik | allinone">
+    <meta property="og:url" content="hhttps://tiktok-download2024.vercel.app/">
+    <meta property="og:site_name" content="Marvin Quillo Saik | allinone">
+    <meta property="og:description" content>
+    <meta property="og:image" content="https://tiktok-download2024.vercel.app/images/img-512.jpg">
+
+    <meta property="twitter:image:src" content="https://tiktok-download2024.vercel.app/img-512.jpg" />
+    <meta property="twitter:title" content="Marvin Quillo Saik | allinone" />
+    <meta property="twitter:description" content />
+
+    <meta name="keywords"
+        content="allinone is a website that provides you with the tools to download videos from Tiktok and other files.">
+    <meta name="description" content />
+
+    <meta name="author" content="Marvin Quillo Saik">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9290651609558824"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">allinone</a>
+
+        <nav class="navbar">
+            <button data-target="home" class="filter-btn">Home</button>
+            <button data-target="kabeai" class="filter-btn">Kabe AI</button>
+            <button data-target="ttdl" class="filter-btn">TiktokDL</button>
+            <button data-target="ytdl" class="filter-btn">YoutubeDL</button>
+            <button data-target="fbdl" class="filter-btn">FacebookReelsDL</button>
+            <button data-target="musicdl" class="filter-btn">YoutubeMusicDL</button>
+            <button data-target="filedl" class="filter-btn">ImageDL</button>
+            <button data-target="ttsxdl" class="filter-btn">Text To Speech</button>
+            <button data-target="aidl" class="filter-btn">Conversational AI</button>
+            <button data-target="imagegen" class="filter-btn">ImageGen</button>
+            <button data-target="ghprofile" class="filter-btn">Github Profile</button>
+            <button data-target="weather" class="filter-btn">Weather Search</button>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-close" id="close-icon"></i>
+    </header>
+
+    <div class="container">
+        <section class="section home" id="home">
+            <h1>Welcome to <span>allinone</span></h1>
+            <p>allinone is a website that provides you with the tools to download videos from Tiktok and other files.</p>
+
+            <a href="https://web.facebook.com/profile.php?id=100092257136800" target="_blank">Contact developer</a>
+        </section>
+
+        <section class="section" id="ttdl">
+            <div class="card">
+                <h2>Download Tiktok Videos</h2>
+                <form id="ttdlForm" method="post">
+                    <input type="text" name="url" placeholder="Enter Your Tiktok Url..." autofocus required>
+                    <button type="submit" id="ttdlButton">Download</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="filedl">
+            <div class="card">
+                <h2>Download Images</h2>
+                <form action="#">
+                    <input type="url" placeholder="Enter Yor image url..." id="filedl-input" autofocus required>
+                    <button id="file-download-btn">Download</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="ytdl">
+            <div class="card">
+                <h2>Download YouTube Videos</h2>
+                <form id="ytdlForm" onsubmit="event.preventDefault(); download();">
+                    <input type="text" id="link" placeholder="Enter Your YouTube Url..." autofocus required />
+                    <select id="format" class="format" required="">
+                        <option disabled="" selected="">Select Video Format</option>
+                        <option value="1080">1080p</option>
+                        <option value="4k">4k</option>
+                        <option value="8k">8k</option>
+                    </select>
+                    <button type="submit" class="btn">Extract Video</button>
+                    <div class="result2"></div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="musicdl">
+            <div class="card">
+                <h2>Download YouTube Videos To Music</h2>
+                <form onsubmit="event.preventDefault(); Get();">
+                    <input type="text" class="link YouTube" id="youtubeUrl" placeholder="Enter Your YouTube Url..." autofocus required />
+                    <button type="submit" class="Get">Download</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="ttsxdl">
+            <div class="card">
+                <h2>Text To Speech</h2>
+                <form action="#">
+                    <div class="row">
+                        <textarea placeholder="Enter Text To Talk..." autofocus required></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="outer">
+                            <select class="format select">
+                                <option disabled="" selected="">Select Voice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="speech">Talk Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="aidl">
+            <div class="card">
+                <h2>Artificial Intelligence</h2>
+                <div class="messages">
+
+                </div>
+                <select class="format select" id="ai-select" style="margin-top: 10px; margin-bottom: -30px;">
+                    <option disabled selected>Select AI model</option>
+                    <option value="gpt4">GPT4</option>
+                    <option value="gemini">Gemini</option>
+                    <option value="llama">Llama</option>
+                    <option value="gemma">Gemma</option>
+                    <option value="">Qwen</option>
+                </select>
+                <form id="aiForm">
+                    <input type="text" class="link YouTube" id="questionInput" placeholder="Ask anything..." autofocus required />
+                    <button type="submit" class="askAI">Ask now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="imagegen">
+            <div class="card">
+                <h2>Images Generator</h2>
+                <div class="imagegen-preview"></div>
+                <select class="format select" id="model-select" style="margin-top: 10px; margin-bottom: -20px;">
+                    <option disabled selected>Select model</option>
+                    <option value="dalle">Dalle</option>
+                    <option value="dallev2">DalleV2</option>
+                    <option value="sdxl">SDXL</option>
+                    <option value="openjourney">Open Journey</option>
+                    <option value="emi">Emi</option>
+                    <option value="render">Render</option>
+                    <option value="pixart">Pixart</option>
+                </select>
+                <form id="imagegen-form">
+                    <input type="text" placeholder="Enter Your prompt..." id="imagegen-input" autofocus required>
+                    <button type="button" id="generate-button"><i class="fa fa-play"></i> Generate</button>
+                </form>
+                <a id="download-link" style="display: none;" class="imagegen-button" download="generated_image.png">Download Image</a>
+            </div>
+        </section>
+
+        <section class="section" id="fbdl">
+            <div class="card">
+                <h2>Download Facebook Reels</h2>
+                <form onsubmit="event.preventDefault(); GetReels();">
+                    <input type="text" class="link Facebook" id="fbUrl" placeholder="Enter Your Facebook Reels Url..." autofocus required />
+                    <button type="submit" class="fbDownload">Download</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="kabeai">
+            <div class="card">
+                <h2>Kabe Bot</h2>
+                <div class="messages" id="messages"></div>
+                <form id="kabeForm">
+                    <input type="text" class="kabeInput" id="kabeInput" placeholder="Ask anything..." autofocus required />
+                    <button type="submit" class="kabeAI">Ask Kabe now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="ghprofile">
+            <div class="card">
+                <h2>Github Profile</h2>
+                <div class="ghpreview" id="ghpreview"></div>
+                <form id="ghForm">
+                    <input type="text" class="ghInput" id="ghInput" placeholder="Enter Github Username" autofocus required />
+                    <button type="submit" class="ghBtn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="weather">
+            <div class="card">
+                <h2>Weather Search</h2>
+                <div class="weatherpreview" id="weatherpreview"></div>
+                <form id="weatherForm">
+                    <input type="text" class="weatherInput" id="weatherInput" placeholder="Enter Place Name..." autofocus required />
+                    <button type="submit" class="weatherBtn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="searchAnything">
+            <div class="card">
+                <h2>Search Anything On Google</h2>
+                <div class="searchAnythingPreview" id="searchAnythingPreview"></div>
+                <form id="searchAnythingForm">
+                    <input type="text" class="ghInput" id="searchAnythingInput" placeholder="Enter Name To Search..." autofocus required />
+                    <button type="submit" class="searchAnythingBtn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; Marvin Quillo Saik | Allrights Reserved 2024</p>
+        </footer>
+    </div>
+     
+
+
+    <script type="text/javascript" src="https://www.counters-free.net/count/f667"></script><br>
+ <a href='https://www.versicherungen.at/krankenversicherung-rechner/'>Private Krankenversicherung Rechner</a> <script type='text/javascript' src='https://whomania.com/ctr?id=0256bf1fbe0a54c66770899beaefd2e46c08b4cb'></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
